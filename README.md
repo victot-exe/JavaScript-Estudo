@@ -230,7 +230,9 @@ do{
 } while(a<10)
 ~~~
 ## Funções
+### Funções declarativas
 * Blocos de comando e instrução;
+* Pode ter ou não parâmetros(parãmetro é quando a função recebe algum dado)
 * Sintaxe:
 ~~~
 function funcao(parametro){
@@ -243,3 +245,18 @@ function funcao(parametro){
 ~~~
 * para chamar a funcao usamos: `funcao(2)` -> saida: `Você errou`
 
+### Arrow function
+* Sempre serão anônimas (não tem nome)
+* Funções de sintaxe curta
+* var funcao = () => {codigo}
+~~~
+var funcao = () =>{
+    console.log('pronto')
+}
+~~~
+saída->`pronto`
+### Alguns metodos nativos do JS:
+* Number() -> converte valores em números;
+* Prompt() -> Registra entradas do usuário;
+* Alert() -> Gera um alerta para o usuário;
+* TemplateStrings -> Possibilita o uso de strings junto com expressões são delimitados por: `string text`;
