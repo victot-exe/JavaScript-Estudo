@@ -122,11 +122,110 @@ var funcao = camiseta.vestir()
 
 ## Estruturas de decisão
 ### if
-Usamos o if para estabelecer uma condição para passar ou não por um bloco de código:
+* Usamos o `if` para estabelecer uma condição para passar ou não por um bloco de código:
 ~~~
 var j1 = 0
 var j2 = 0
 if(j1 > 0){
     console.log('jogador 1 marcou ponto.')
 }
+~~~
+### else
+* No caso do `if` não ser atendido colocamoso `else` para outro bloco de código:
+~~~
+var j1 = 0
+var j2 = 0
+if(j1 > j2){
+    console.log('Jogador 1 ganhou!')
+} else{
+    console.log('Jogador 2 ganhou!')
+}
+~~~
+`Jogador 2 ganhou`   
+_temos esse resultado pois j1 não é maior que j2(o algoritimo ainda precisa melhorar.)_
+
+### else if
+* `else if` é utilizado para quando temos varias condições e precisamos de varios 'ifs'
+~~~
+var j1 = 0
+var j2 = 0
+if(j1 > j2){
+    console.log('Jogador 1 ganhou!')
+} else if(j2 > j1){
+    console.log('Jogador 2 ganhou!')
+} else{
+    console.log('O jogo empatou')
+}
+~~~
+`O jogo empatou`  
+_Aqui já temos um algoritimo mais completo_  
+
+### if ternário
+* Podemos usar o operador ternário para verificar o `if` em apenas uma linha:
+~~~
+var condicao = j1 > j2 ? condicao se true : conficao false
+~~~
+
+### switch/case
+* Outra estrutura de condição, recebemos um variavel e falamos o que acontece com ela dependendo do valor:
+~~~
+switch(expressão){
+    case 1:
+    {bloco de código}
+    break
+    case 2:
+    {bloco de código}
+    break
+}
+~~~
+
+## Laços de repetição
+* Estruturas que repetem as instruções até atingir uma condição:
+
+### for
+* Repete a instrução até que a condição seja false
+for(expressãoInicial; condição; incremento){
+    bloco de código
+}
+~~~
+for(let i = 0; i < array.length; i++){
+    console.log(i)
+}
+~~~
+### for/in
+* Percorre as propriedades de um objeto e retorna o índice de cada uma, além de executar o bloco de código a cada repetição;
+* Para objetos ela retorna as propriedades e para arrays retorna o índice;
+~~~
+var array = [1, 2, 3, 4]
+for(i in array){
+    console.log(i)
+}
+~~~
+### for/of
+* Parecido com o `for/in`, a diferença é que este retorna o valor de cada elemento
+~~~
+var array = [1, 2, 3, 4]
+for(i of array){
+    console.log(i)
+}
+~~~
+### while
+* Enquanto a condição for verdadeira ele executa o código;
+* A verificação é feita antes da execução
+~~~
+var a = 0;
+while(a < 10){
+    a++
+    console.log(a)
+}
+~~~
+### do/while
+* Parecido com o while ele repete o código até que a condição seja `false`
+* A diferença é que a verificação é feita após a execução do mesmo:
+~~~
+var a = 0
+do{
+    a++
+    console.log(a)
+} while(a<10)
 ~~~
