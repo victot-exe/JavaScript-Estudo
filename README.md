@@ -85,7 +85,48 @@ _retornam boolean_
 * `!` - "not" - negação(quando verdadeiro vira falso e vice-versa);
 
 ## Vetores ou Arrays
-São um tipo de lista ou matriz de variáveis, onde cada uma delas possui um índice. Os tipos podem variar. Imagine caixas dentro de caixas.
+* São um tipo de lista ou matriz de variáveis, onde cada uma delas possui um índice(começando do 0).
+* Os tipos podem variar e inclusive ser array.
+* Imagine caixas dentro de caixas.
+* Deve ser declarado entre `[]` e ter as variáveis dividido por `,`;
 ~~~
 let array = ['string', 1, true...];
+~~~
+### Manipulando arrays
+* `forEach()` - Percorre a array;
+* `push()` - Adiciona um item no final da array;
+* `pop()` - Remove item no final da array;
+* `shift()` - Remove item no inicio da array;
+* `unshift()` - Adiciona item no inicio da array;
+* `indexOf()` - Retorna o índice de um valor;
+* `splice()` - Remove ou substitui um item pelo índice;
+* `slice()` - Retorna parte da array existente;
+
+## Objetos
+Dados que possuem propriedades e valores, deve ser declarado entre `{}`
+~~~
+var camiseta = {
+    cor: 'branca',
+    tamanho: 'p',
+    funcao: vestir(){}
+}
+~~~
+### Manipulando objetos
+Para facilitar a manipulação as propriedades do objeto podem ser atribuidas a variáveis. Chamamos isso de desestruturação.
+~~~
+var camiseta ={cor: 'branca', tamanho: 'p', funcao: vestir()}
+var cor = camiseta.cor
+var tamanho = camiseta.tamanho
+var funcao = camiseta.vestir()
+~~~
+
+## Estruturas de decisão
+### if
+Usamos o if para estabelecer uma condição para passar ou não por um bloco de código:
+~~~
+var j1 = 0
+var j2 = 0
+if(j1 > 0){
+    console.log('jogador 1 marcou ponto.')
+}
 ~~~
