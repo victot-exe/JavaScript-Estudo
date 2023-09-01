@@ -229,3 +229,17 @@ do{
     console.log(a)
 } while(a<10)
 ~~~
+## Funções
+* Blocos de comando e instrução;
+* Sintaxe:
+~~~
+function funcao(parametro){
+    if(parametro == 10){
+        console.log('Você acertou')
+    } else{
+        console.log('você errou')
+    }
+}
+~~~
+* para chamar a funcao usamos: `funcao(2)` -> saida: `Você errou`
+
