@@ -10,6 +10,7 @@ JavaScript é usado para fazer a parte interativa de apps e páginas web.
 <ul>
 <li>Externar o Script.js</li>
 <li>Carregar o Script.js ao final do body</li>
+<li>Ou colocar no header com defer na declaração</li>
 </ul>
 
 ## Variáveis
